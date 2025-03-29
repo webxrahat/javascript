@@ -23,10 +23,10 @@
 // const ans = largestPopulation(obj);
 // console.log(ans);
 
-const arr = [1, 25, 5, 8];
+// const arr = [1, 25, 5, 8];
 
-const reducer = (acc, curIdx) => acc + curIdx;
+// const reducer = (acc, curIdx) => acc + curIdx;
 
-const result = arr.reduce(reducer, 1);
+// const result = arr.reduce(reducer, 1);
 
-console.log(result);
+// console.log(result);
