@@ -24,7 +24,20 @@
 // }
 
 // console.log(carYear(car));
+// const inpTask = document.getElementById("inp");
 
-const inpTask = document.getElementById("inp");
+// document.getElementById("btn").addEventListener("click", function () {
+//  const data = inpTask.value.trim();
+//  console.log(data);
+// });
 
-console.log(inpTask.value);
+// inpTask.addEventListener("input", function () {
+//  const data = inpTask.value.trim();
+//  console.log(data);
+// });
+
+// function handleChange() {
+//  const inpTask = document.getElementById("inp");
+//  const data = inpTask.value.trim();
+//  console.log(data);
+// }
