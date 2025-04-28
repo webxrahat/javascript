@@ -1,11 +1,22 @@
-const inputData = document.getElementById("inp-field");
-const terbtn = document.getElementById("add-btn");
+const todoList = new TodoList();
 
-terbtn.addEventListener("click", function () {
-  console.log(inte);
-});
+function addTask() {
+  const taskInput = document.getElementById("taskInput");
+  // console.log(taskInput);
 
-inputData.addEventListener("blur", function () {
-  const inte = inputData.innerText;
-  console.log(inte);
+  const taskTask = taskInput.value.trim();
+  if (taskTask.length > 0) {
+    todoList.addTask(taskTask);
+    // console.log(taskInput.value);
+
+    taskInput.value = "";
+    todoList.renderTasks();
+  }
+}
+
+document.getElementById("addButton").addEventListener("click", addTask);
+document.getElementById("taskInput").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addTask();
+  }
 });

@@ -24,3 +24,7 @@
 // }
 
 // console.log(carYear(car));
+
+const inpTask = document.getElementById("inp");
+
+console.log(inpTask.value);
